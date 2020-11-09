@@ -12,12 +12,12 @@ const config = {
 	},
 	context: __dirname,
 	entry: {
-		main: "./assets/src/js/main.js",
+		main: "./admin/src/js/wp-pro-admin-search-admin.js",
 	},
 	output: {
-		path: path.resolve(__dirname, "assets/public"),
-		filename: "./js/[name].min.js",
-		sourceMapFilename: "./js/[name].js.map",
+		path: path.resolve(__dirname, "admin/public"),
+		filename: "./js/wp-pro-admin-search-admin.min.js",
+		sourceMapFilename: "./js/wp-pro-admin-search-admin.js.map",
 	},
 	devtool: "source-map",
 	module: {
@@ -84,7 +84,7 @@ const config = {
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: "./css/[name].min.css",
+			filename: "./css/wp-pro-admin-search-admin.min.css",
 			chunkFilename: "./css/[id].css",
 			devtool: "source-map",
 		}),
